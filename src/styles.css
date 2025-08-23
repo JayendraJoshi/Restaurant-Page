@@ -31,7 +31,7 @@ header{
     justify-content: center;
 }
 nav {
-    height: 20vh; 
+    flex-basis:  20vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,19 +54,62 @@ button {
 #content{
     flex-grow: 1;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 main{
     background-color: rgba(0, 0, 0, 0.5); 
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
     display: flex;
     flex-direction: column;
     line-height: 1.5;
-    padding:20px;
+    width: 40vw;
+    height: 55vh;
+    padding: 4rem 0;
+}
+.descriptionText{
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+.logo{
+    width: 30vw;
+    height: auto;
+    object-fit: contain;
+}
+.locationImage{
+    height: auto;
+    width: 30vw;
+    object-fit: contain;
+}
+.contactInfo{
+    line-height: 2rem;
+    text-align: left;
+    width: 30vw;
+    font-size: 1.5rem;
+}
+.phoneNumberImage {
+    vertical-align: middle; 
+    width: 1.5rem; 
+    height: 1.5rem; 
+    margin-right: 0.5rem;
+}
+.storeImage{
+    vertical-align: middle; 
+    width: 1.5rem; 
+    height: 1.5rem; 
+    margin-right: 0.5rem;
+    object-fit: contain;
+}
+.address {
+    padding-left: 2rem;
+    text-indent: -2rem;
 }
 footer{
-    flex-basis: 10vh;
+    flex-basis: 5vh;
     background-color: rgba(0, 0, 0, 0.7); 
     display: flex;
     justify-content: center;
