@@ -16,6 +16,7 @@ html, body {
 
 body {
     background-image: url('./images/background.jpg');
+    background-attachment: fixed;
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: bottom; 
@@ -25,10 +26,12 @@ body {
 }
 header{
     flex-basis: 20vh;
+    flex-shrink: 0;
     background-color: rgba(0, 0, 0, 0.7); 
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 nav {
     flex-basis:  20vh; 
@@ -57,9 +60,10 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding:5vh 0;
 }
 main{
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.6); 
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -67,9 +71,9 @@ main{
     display: flex;
     flex-direction: column;
     line-height: 1.5;
-    width: 40vw;
-    height: 55vh;
-    padding: 4rem 0;
+    width: clamp(400px,40vw,750px);
+    flex: 1;
+    padding: 4rem 4rem;
 }
 .descriptionText{
     line-height: 2rem;
@@ -108,8 +112,29 @@ main{
     padding-left: 2rem;
     text-indent: -2rem;
 }
+.dish{
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+.menuView{
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: clamp();
+}
+.menuView > div{
+    background-color: rgba(0, 0, 0, 0.7); 
+    width: clamp(200px,15vw,250px);
+    height:auto;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    padding:10px;
+    gap:20px;
+}
 footer{
     flex-basis: 5vh;
+    flex-shrink: 0;
     background-color: rgba(0, 0, 0, 0.7); 
     display: flex;
     justify-content: center;

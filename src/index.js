@@ -42,6 +42,7 @@ homePage();
 
         HomeButton.addEventListener("click",function(){
             main.innerHTML="";
+            main.classList.remove("menuView");
             homePage();
         })
         MenuButton.addEventListener("click",function(){
@@ -50,6 +51,7 @@ homePage();
         })
         ContactButton.addEventListener("click",function(){
             main.innerHTML="";
+            main.classList.remove("menuView");
             contactPage();
         })
 
