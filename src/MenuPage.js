@@ -6,6 +6,9 @@ import dosa from "./images/masalaDosa.png";
 import chickenTikka from "./images/chickenTikkaMasala.png";
 
 const menuPage = function(){
+    const menuButton = document.querySelector(".Menu");
+    menuButton.classList.add("active");
+
     const main = document.querySelector("main");
     console.log("MenuPage");
 
@@ -20,6 +23,7 @@ const menuPage = function(){
     daalContainer.appendChild(daalTitle);
     daalContainer.appendChild(daalImage);
     daalContainer.appendChild(daalDescription);
+    daalContainer.classList.add("dishContainer");
 
     const chapatiImage = document.createElement("img");
     chapatiImage.classList.add("dish");
@@ -32,6 +36,7 @@ const menuPage = function(){
     chapatiContainer.appendChild(chapatiTitle);
     chapatiContainer.appendChild(chapatiImage);
     chapatiContainer.appendChild(chapatiDescription);
+    chapatiContainer.classList.add("dishContainer");
 
     const paneerImage = document.createElement("img");
     paneerImage.classList.add("dish");
@@ -39,11 +44,12 @@ const menuPage = function(){
     const paneerTitle = document.createElement("h3");
     paneerTitle.textContent = "Paneer";
     const paneerDescription = document.createElement("p");
-    paneerDescription.textContent = "Deliciously fresh Indian cottage cheese simmered in a rich and creamy tomato butter gravy.";
+    paneerDescription.textContent = "Deliciously fresh Indian cottage cheese simmered in a rich and creamy tomato butter gravy";
     const paneerContainer = document.createElement("div");
     paneerContainer.appendChild(paneerTitle);
     paneerContainer.appendChild(paneerImage);
     paneerContainer.appendChild(paneerDescription);
+    paneerContainer.classList.add("dishContainer");
 
     const samosaImage = document.createElement("img");
     samosaImage.classList.add("dish");
@@ -56,6 +62,7 @@ const menuPage = function(){
     samosaContainer.appendChild(samosaTitle);
     samosaContainer.appendChild(samosaImage);
     samosaContainer.appendChild(samosaDescription);
+    samosaContainer.classList.add("dishContainer");
 
     const dosaImage = document.createElement("img");
     dosaImage.classList.add("dish");
@@ -69,6 +76,7 @@ const menuPage = function(){
     dosaContainer.appendChild(dosaTitle);
     dosaContainer.appendChild(dosaImage);
     dosaContainer.appendChild(dosaDescription);
+    dosaContainer.classList.add("dishContainer");
 
     const chickenTikkaImage = document.createElement("img");
     chickenTikkaImage.classList.add("dish");
@@ -81,6 +89,7 @@ const menuPage = function(){
     chickenTikkaContainer.appendChild(chickenTikkaTitle);
     chickenTikkaContainer.appendChild(chickenTikkaImage);
     chickenTikkaContainer.appendChild(chickenTikkaDescription);
+    chickenTikkaContainer.classList.add("dishContainer");
 
     main.appendChild(daalContainer);
     main.appendChild(chapatiContainer);

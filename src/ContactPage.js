@@ -3,8 +3,11 @@ import phoneSVG from "./images/phone.svg";
 import storeSVG from "./images/store.svg";
 
 const contactPage = function(){
+    const contactButton = document.querySelector(".Contact");
+    contactButton.classList.add("active");
 
     const main = document.querySelector("main");
+    main.classList.add("contactView");
     const contactInfo = document.createElement("div");
     contactInfo.classList.add("contactInfo");
     const phoneSVGImage = document.createElement("img");
@@ -18,6 +21,7 @@ const contactPage = function(){
     const lineOne = document.createElement("p");
     lineOne.appendChild(phoneSVGImage);
     lineOne.appendChild(document.createTextNode("012 345 678 911"));
+    lineOne.classList.add("phoneNumber");
 
     const lineTwo = document.createElement("p");
     lineTwo.appendChild(storeSVGImage);
