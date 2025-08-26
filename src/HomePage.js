@@ -13,7 +13,7 @@ const homePage = function () {
   const description = document.createElement("p");
   description.classList.add("descriptionText");
   description.appendChild(
-    document.createTextNode("The best Indian restaurant in your country")
+    document.createTextNode("The best Indian restaurant in the UK")
   );
   description.appendChild(document.createElement("br")); 
   description.appendChild(document.createTextNode("Made with love since 1965"));
