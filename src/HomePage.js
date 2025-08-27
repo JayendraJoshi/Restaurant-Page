@@ -15,7 +15,7 @@ const homePage = function () {
   description.appendChild(
     document.createTextNode("The best Indian restaurant in the UK")
   );
-  description.appendChild(document.createElement("br")); 
+  description.appendChild(document.createElement("br"));
   description.appendChild(document.createTextNode("Made with love since 1965"));
 
   main.appendChild(description);

@@ -9,7 +9,7 @@ function renderInitialPage() {
     contentDiv.appendChild(main);
   })();
   (function renderNav() {
-    const title = document.createElement("h1");
+    const title = document.createElement("a");
     title.textContent = "Maharaja's Delight";
 
     const nav = document.querySelector("nav");
@@ -57,6 +57,7 @@ function addEventListeners() {
   const HomeButton = document.querySelector(".Home");
   const MenuButton = document.querySelector(".Menu");
   const ContactButton = document.querySelector(".Contact");
+  const titleLink = document.querySelector("nav > a");
 
   HomeButton.addEventListener("click", function () {
     main.innerHTML = "";
@@ -76,6 +77,13 @@ function addEventListeners() {
     removerFunctions.removeActiveClassFromButtons();
     contactPage();
   });
+  titleLink.addEventListener("click",function(event){
+    event.preventDefault();
+    main.innerHTML = "";
+    removerFunctions.removeAllClassesFromMain();
+    removerFunctions.removeActiveClassFromButtons();
+    homePage();
+  })
 }
 renderInitialPage();
 addEventListeners();
