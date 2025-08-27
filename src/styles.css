@@ -137,7 +137,7 @@ button.active {
   justify-content: flex-start;
   align-items: center;
   flex-grow: 1;
-  padding: 10vh 0;
+  padding: 7.5vh 10vw;
   text-align: center;
 }
 main {
@@ -146,8 +146,9 @@ main {
   grid-template-rows: auto;
   justify-items: center;
   align-content: center;
-  width: clamp(650px, 30vw, 700px);
-  max-height: 50vh;
+  width: 100%;
+  max-width: 700px;
+  max-height: 55vh;
   flex-grow: 1;
   padding: 1.5rem;
   margin: 0 auto;
@@ -246,4 +247,44 @@ main > * {
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 650px) {
+  main{
+  max-height: 45vh;
+  }
+  #content{
+    padding:12.5vh 10vw;
+  }
+  .homeView{
+    font-size: 1.5rem;
+  }
+  .contactView{
+    grid-template-rows: auto 1fr;
+  }
+}
+@media screen and (max-width: 570px){  
+  nav > a{
+    font-size: 3rem;
+  }
+  .logo{
+    min-width: 350px;
+  }
+  .menuView{
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 500px){
+.homeView{
+  font-size: 1.3rem;
+}
+.logo{
+    min-width: 300px;
+  }
+#content{
+  padding: 15vh 10vw;
+}
+main{
+  max-height: 42.5vh;
+}
 }
